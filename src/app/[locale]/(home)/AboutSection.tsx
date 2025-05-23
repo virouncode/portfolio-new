@@ -7,11 +7,11 @@ const AboutSection = () => {
       className="min-h-[calc(100vh-3rem)] bg-(--cream) flex flex-col gap-10  scroll-mt-11 lg:scroll-mt-14 pt-10"
       id="about"
     >
-      <h3
+      <h2
         className={`text-6xl tracking-tight font-bold text-center ${caveat.className}`}
       >
         A propos
-      </h3>
+      </h2>
 
       <div className="container mx-auto flex flex-col lg:flex-row items-start gap-4 lg:gap-20 justify-between px-6 py-10">
         <div className="lg:w-1/2 text-sm text-justify">
