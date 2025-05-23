@@ -1,12 +1,29 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { useLocale } from "next-intl";
 
 const CVButton = () => {
+  const locale = useLocale();
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href =
+      locale === "fr"
+        ? "/TV_KATTYGNARATH_CV_FR.pdf"
+        : "/TV_KATTYGNARATH_RESUME.pdf"; // URL relative ou absolue
+    link.download =
+      locale === "fr"
+        ? "TV_KATTYGNARATH_CV_FR.pdf"
+        : "TV_KATTYGNARATH_RESUME.pdf"; // Nom du fichier téléchargé
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <Button
       variant="outline"
       className="bg-(--cream) min-w-[180px] px-6 py-5 rounded-full shadow-xl shadow-black/10  hover:bg-(--cream)/90 active:shadow-none active:scale-[98%] transition-all duration-300"
+      onClick={handleDownloadCV}
     >
       CV
     </Button>

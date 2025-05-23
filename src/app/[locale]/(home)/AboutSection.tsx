@@ -1,15 +1,23 @@
 import Link from "next/link";
+import { caveat } from "./ProjectsSection";
 
 const AboutSection = () => {
   return (
     <section
-      className="min-h-[calc(100vh-3rem)] bg-(--cream) flex items-center scroll-mt-11 lg:scroll-mt-14"
+      className="min-h-[calc(100vh-3rem)] bg-(--cream) flex flex-col gap-10  scroll-mt-11 lg:scroll-mt-14 pt-10"
       id="about"
     >
+      <h3
+        className={`text-6xl tracking-tight font-bold text-center ${caveat.className}`}
+      >
+        A propos
+      </h3>
+
       <div className="container mx-auto flex flex-col lg:flex-row items-start gap-4 lg:gap-20 justify-between px-6 py-10">
-        <h1 className="absolute -left-full">A propos de moi</h1>
         <div className="lg:w-1/2 text-sm text-justify">
-          <h2 className="text-3xl font-bold mb-6">Mon parcours</h2>
+          <h3 className={`text-5xl font-bold mb-6 ${caveat.className}`}>
+            Mon parcours
+          </h3>
           <p className="mb-4">
             Après avoir obtenu mon{" "}
             <span className="text-blue-400 font-bold">
@@ -61,7 +69,7 @@ const AboutSection = () => {
             </span>
             . Chaque nouvelle fonctionnalité est un nouveau défi à résoudre.
           </p>
-          <p className="mb-4">
+          {/* <p className="mb-4">
             J'ai d'abord co-développé une application mobile qui aide à la
             composition et à la production musicale. Nous ne savions pas comment
             nous y prendre ni quel langage utiliser, mais ce qui comptait le
@@ -113,7 +121,7 @@ const AboutSection = () => {
               Next JS 15 fullstack
             </span>
             .
-          </p>
+          </p> */}
           <p className="mb-4">
             Mon parcours atypique reflète celui d’une personne passionnée, qui
             aime créer et apprendre.
@@ -121,7 +129,9 @@ const AboutSection = () => {
         </div>
         <div className="lg:w-1/2 flex flex-col gap-4 lg:gap-20">
           <div className="flex-1 text-sm">
-            <h2 className="text-3xl font-bold mb-6">Education</h2>
+            <h3 className={`text-5xl font-bold mb-6 ${caveat.className}`}>
+              Education
+            </h3>
             <ul>
               <li className="mb-4">
                 2004-2007:{" "}
@@ -170,7 +180,9 @@ const AboutSection = () => {
             </ul>
           </div>
           <div className="flex-1 text-sm">
-            <h2 className="text-3xl font-bold mb-6">Centres d'intérêt</h2>
+            <h3 className={`text-5xl font-bold mb-6 ${caveat.className}`}>
+              Centres d'intérêt
+            </h3>
             <ul>
               <li>Musique</li>
               <li>Audio Programming / Traitement du signal / Electronique</li>

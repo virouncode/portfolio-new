@@ -1,14 +1,29 @@
+import CarouselCalvinEMR from "@/components/CarouselCalvinEMR";
 import CarouselFm4all from "@/components/CarouselFm4all";
+import CarouselStudioNouvel from "@/components/CarouselStudioNouvel";
+import CarouselToool from "@/components/CarouselToool";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Caveat } from "next/font/google";
 import Image from "next/image";
+
+export const caveat = Caveat({
+  variable: "--font-caveat",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const ProjectsSection = () => {
   return (
     <section
-      className="h-[calc(100vh-3rem)] sm:min-h-[calc(100vh-3rem)] bg-gradient-to-br from-[var(--blue)] via-[color-mix(in_oklch,var(--blue),black_10%)] to-[color-mix(in_oklch,var(--blue),black_40%)] scroll-mt-11"
+      className="min-h-[calc(100vh-3rem)] sm:min-h-[calc(100vh-3rem)] bg-gradient-to-br from-[var(--blue)] via-[color-mix(in_oklch,var(--blue),black_10%)] to-[color-mix(in_oklch,var(--blue),black_40%)] scroll-mt-11 flex flex-col gap-10 pt-10"
       id="projets"
     >
-      <Tabs defaultValue="fm4all" className="container mx-auto px-6 py-10">
+      <h2
+        className={`text-6xl tracking-tight font-bold text-center ${caveat.className}`}
+      >
+        Projets
+      </h2>
+      <Tabs defaultValue="fm4all" className="container mx-auto px-6">
         <TabsList className="flex justify-center items-center py-6 mb-6 md:w-1/2 w-full mx-auto">
           <TabsTrigger
             value="fm4all"
@@ -71,16 +86,21 @@ const ProjectsSection = () => {
         <TabsContent value="fm4all" className="h-[600px] sm:h-auto">
           <CarouselFm4all />
         </TabsContent>
-        {/* <TabsContent value="calvinEMR">
+        <TabsContent value="calvinEMR" className="h-[600px] sm:h-auto">
           <CarouselCalvinEMR />
         </TabsContent>
-        <TabsContent value="tooolApp">
+
+        <TabsContent value="tooolApp" className="h-[600px] sm:h-auto">
           <CarouselToool />
         </TabsContent>
-        <TabsContent value="studioNouvel">
+
+        <TabsContent value="studioNouvel" className="h-[600px] sm:h-auto">
           <CarouselStudioNouvel />
-        </TabsContent> */}
+        </TabsContent>
       </Tabs>
+      <div className="flex justify-center">
+        <div className="h-[2px]  bg-[var(--cream)] opacity-90 container mx-auto"></div>
+      </div>
     </section>
   );
 };
