@@ -17,6 +17,13 @@ export const metadata = (): Metadata => ({
   description:
     "Portfolio de Viroun Kattygnarath, développeur fullstack React/Node/Next JS à Paris, France.",
   openGraph: {},
+  alternates: {
+    canonical: "https://www.viroun.dev/fr",
+    languages: {
+      en: "https://www.viroun.dev/en",
+      fr: "https://www.viroun.dev/fr",
+    },
+  },
 });
 
 export default async function page({
