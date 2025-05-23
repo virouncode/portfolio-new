@@ -21,7 +21,7 @@ const AboutSection = () => {
           <p className="mb-4">
             Après avoir obtenu mon{" "}
             <span className="text-blue-400 font-bold">
-              diplôme d'Ingénieur en Mécanique
+              diplôme d&apos;Ingénieur en Mécanique
             </span>{" "}
             en 2007 à{" "}
             <Link
@@ -32,45 +32,48 @@ const AboutSection = () => {
               {" "}
               ISAE - SUPMECA
             </Link>
-            , et avoir travaillé quelques années en entreprise, j'ai finalement
-            suivi ma passion pour la musique et la guitare.
+            , et avoir travaillé quelques années en entreprise, j&apos;ai
+            finalement suivi ma passion pour la musique et la guitare.
           </p>
           <p className="mb-4">
-            J'ai eu pendant 10 ans la chance d'accompagner de nombreux artistes
-            sur scène et en studio comme{" "}
+            J&apos;ai eu pendant 10 ans la chance d&apos;accompagner de nombreux
+            artistes sur scène et en studio comme{" "}
             <span className="text-blue-400 font-bold">
               guitariste et compositeur
             </span>
-            . La période du COVID-19 et l'arrêt des concerts fut pour moi
-            l'opportunité de découvrir le monde de la{" "}
+            . La période du COVID-19 et l&apos;arrêt des concerts fut pour moi
+            l&apos;opportunité de découvrir le monde de la{" "}
             <span className="text-blue-400 font-bold">
               programmation informatique
             </span>
-            . J'avais fait un peu de code en école d'ingénieur, mais cette
-            fois-ci, c'est devenu une autre passion.
+            . J&apos;avais fait un peu de code en école d&apos;ingénieur, mais
+            cette fois-ci, c&apos;est devenu une autre passion.
           </p>
           <p className="mb-4">
-            En tant que développeur autodidacte, j'ai appris de la même manière
-            qu'avec la musique,{" "}
+            En tant que développeur autodidacte, j&apos;ai appris de la même
+            manière qu&apos;avec la musique,{" "}
             <span className="text-blue-400 font-bold">
               en faisant des projets personnels{""}
             </span>{" "}
-            plutôt qu'en suivant des formations théoriques, souvent trop
-            éloignées des enjeux et problèmes d'une application "réelle".
+            plutôt qu&apos;en suivant des formations théoriques, souvent trop
+            éloignées des enjeux et problèmes d&apos;une application
+            &quot;réelle&quot;.
           </p>
           <p className="mb-4">
             Cette approche est selon moi la meilleure source de{" "}
-            <span className="text-blue-400 font-bold">motivation</span> et d'
+            <span className="text-blue-400 font-bold">motivation</span> et
+            d&apos;
             <span className="text-blue-400 font-bold">apprentissage</span>. Voir
-            ce que l'on a imaginé, seul ou en équipe, prendre progressivement
-            forme, ajouter des fonctionnalités au fur et à mesure, et{" "}
+            ce que l&apos;on a imaginé, seul ou en équipe, prendre
+            progressivement forme, ajouter des fonctionnalités au fur et à
+            mesure, et{" "}
             <span className="text-blue-400 font-bold">
               améliorer continuellement le produit
             </span>
             . Chaque nouvelle fonctionnalité est un nouveau défi à résoudre.
           </p>
           {/* <p className="mb-4">
-            J'ai d'abord co-développé une application mobile qui aide à la
+            J&apos;ai d&apos;abord co-développé une application mobile qui aide à la
             composition et à la production musicale. Nous ne savions pas comment
             nous y prendre ni quel langage utiliser, mais ce qui comptait le
             plus, c’est que nous voulions VRAIMENT la créer, et nous avions une
@@ -92,7 +95,7 @@ const AboutSection = () => {
             >
               Toool Music Production App
             </Link>{" "}
-            est aujourd'hui disponible sur les stores.
+            est aujourd&apos;hui disponible sur les stores.
           </p>
           <p className="mb-4">
             Par la suite, mon frère médecin m’a offert l’opportunité de me
@@ -107,15 +110,15 @@ const AboutSection = () => {
             Ontario (Canada).
           </p>
           <p className="mb-4">
-            Dernièrement, j'ai co-fondé la{" "}
+            Dernièrement, j&apos;ai co-fondé la{" "}
             <span className="text-blue-400 font-bold">
               plateforme fm4all.com :{" "}
             </span>
             entreprise de mise en relation entre les PME/TPE et les sociétés de
             services aux entreprises (nettoyage, maintenance règlementaire,
             sécurité incendie, locations de machines à café, etc...). La
-            plateforme s'articule autour d'un comparateur, d'un émetteur de
-            devis en ligne et d'un back-office fournisseur et client,
+            plateforme s&apos;articule autour d&apos;un comparateur, d&apos;un émetteur de
+            devis en ligne et d&apos;un back-office fournisseur et client,
             entièrement réalisés en{" "}
             <span className="text-blue-400 font-bold">
               Next JS 15 fullstack
@@ -144,7 +147,7 @@ const AboutSection = () => {
                 </a>
                 <br />
                 <span className="text-blue-400 font-bold">
-                  Diplôme d'Ingénieur en Mécanique
+                  Diplôme d&apos;Ingénieur en Mécanique
                 </span>
               </li>
               <li className="mb-4">
@@ -160,7 +163,7 @@ const AboutSection = () => {
                 <span className="text-blue-400 font-bold">
                   Classes Préparatoires{" "}
                 </span>
-                Mathématiques, Physique, Science de l'ingénieur (MPSI/MP)
+                Mathématiques, Physique, Science de l&apos;ingénieur (MPSI/MP)
               </li>
               <li className="mb-4">
                 2010-2015:{" "}
@@ -173,15 +176,15 @@ const AboutSection = () => {
                 </a>
                 <br />
                 <span className="text-blue-400 font-bold">
-                  Diplôme de fin d'études en Harmonie, Composition, Arrangement
-                  et Improvisation
+                  Diplôme de fin d&apos;études en Harmonie, Composition,
+                  Arrangement et Improvisation
                 </span>
               </li>
             </ul>
           </div>
           <div className="flex-1 text-sm">
             <h3 className={`text-5xl font-bold mb-6 ${caveat.className}`}>
-              Centres d'intérêt
+              Centres d&apos;intérêt
             </h3>
             <ul>
               <li>Musique</li>
