@@ -17,6 +17,7 @@ const CVButton = () => {
         : "TV_KATTYGNARATH_RESUME.pdf"; // Nom du fichier téléchargé
     document.body.appendChild(link);
     link.click();
+    // Supprimez le lien après le téléchargement
     document.body.removeChild(link);
   };
   return (
