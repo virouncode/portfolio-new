@@ -18,7 +18,7 @@ const CarouselStudioNouvel = () => {
         <CarouselItemPresentation
           logoUrl="/img/logos/studioNouvelLogo.png"
           logoAlt="Studio Nouvel Logo"
-          siteUrl="https://www.studionouvelfr.com"
+          siteUrl="https://www.studionouvel.com"
           description="Site vitrine bilingue pour un collectif musical"
         >
           <div className="flex flex-col gap-5 text-sm">
