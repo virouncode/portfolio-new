@@ -183,7 +183,7 @@ const CarouselCalvinEMR = () => {
           logoAlt="Calvin EMR Logo"
           siteUrl="https://calvinemr-test-6eda3b670bc7.herokuapp.com/"
           description="Dossier médical électronique"
-          videoUrl="https://www.youtube.com/embed/WISYlW_H5t8?rel=0"
+          videoUrl="https://www.youtube.com/embed/TSplJr1gUBU?rel=0"
           videoTitle="Dossier médical électronique de Calvin EMR"
         />
         <CarouselItemVideo

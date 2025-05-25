@@ -5,6 +5,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import CarouselItemPresentation from "./CarouselItemPresentation";
+import CarouselItemVideo from "./CarouselItemVideo";
 
 const CarouselStudioNouvel = () => {
   return (
@@ -82,6 +83,14 @@ const CarouselStudioNouvel = () => {
             </div>
           </div>
         </CarouselItemPresentation>
+        <CarouselItemVideo
+          logoUrl="/img/logos/studioNouvelLogo.png"
+          logoAlt="Studio Nouvel Logo"
+          videoUrl="https://www.youtube.com/embed/0sEmqMhTMhg?rel=0"
+          siteUrl="https://www.studionouvel.com"
+          description="Présentation du site vitrine"
+          videoTitle="Studio Nouvel site vitrine"
+        />
       </CarouselContent>
       <CarouselPrevious className="left-1" />
       <CarouselNext className="right-1" />
