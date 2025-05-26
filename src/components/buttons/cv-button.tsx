@@ -13,6 +13,7 @@ const CVButton = () => {
       locale === "fr"
         ? "https://s4cx2wlukgk9wkdl.public.blob.vercel-storage.com/TV_KATTYGNARATH_CV-ufX17j7LcfPNr0LWs5dwYLWdoAwSzj.pdf"
         : "https://s4cx2wlukgk9wkdl.public.blob.vercel-storage.com/TV_KATTYGNARATH_RESUME-yZrOBatO7ubXqUr2FoEbsY23DGtKGF.pdf"; // URL relative ou absolue
+    link.target = "_blank"; // Ouvre le lien dans un nouvel onglet
     link.download =
       locale === "fr" ? "TV_KATTYGNARATH_CV.pdf" : "TV_KATTYGNARATH_RESUME.pdf"; // Nom du fichier téléchargé
     document.body.appendChild(link);
