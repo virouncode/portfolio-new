@@ -11,9 +11,11 @@ export const generateStaticParams = async () => {
   }));
 };
 
-export async function generateMetadata(
-  params: Promise<{ locale: LocaleType }>
-) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: LocaleType }>;
+}) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
   return {
