@@ -11,7 +11,7 @@ const HeroSection = () => {
   const t = useTranslations("Hero");
   return (
     <section
-      className="min-h-[calc(100vh-3.5rem)] bg-gradient-to-br from-[var(--blue)] via-[color-mix(in_oklch,var(--blue),black_10%)] to-[color-mix(in_oklch,var(--blue),black_40%)] relative scroll-mt-14"
+      className="min-h-[calc(100vh-3.5rem)] bg-gradient-to-br from-[var(--blue)] via-[color-mix(in_oklch,var(--blue),black_10%)] to-[color-mix(in_oklch,var(--blue),black_40%)] relative scroll-mt-14 flex items-center"
       id="hero"
     >
       <div className="absolute inset-0 bg-white/10 backdrop-blur-[100px]"></div>
