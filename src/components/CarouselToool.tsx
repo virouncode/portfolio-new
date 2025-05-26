@@ -42,7 +42,7 @@ const CarouselToool = () => {
               </p>
               <p className="leading-relaxed italic">
                 {t(
-                  "developpee-en-pair-programming-toool-est-concue-pour-faciliter-linspiration-en-deplacement-tout-en-offrant-des-outils-puissants-de-production-musicale"
+                  "toool-est-concue-pour-faciliter-linspiration-en-deplacement-tout-en-offrant-des-outils-puissants-de-production-musicale"
                 )}
               </p>
             </div>
