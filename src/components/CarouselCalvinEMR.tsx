@@ -21,7 +21,7 @@ const CarouselCalvinEMR = () => {
         <CarouselItemPresentation
           logoUrl="/img/logos/calvinLogo.png"
           logoAlt="Calvin EMR Logo"
-          siteUrl="#"
+          siteUrl="https://calvinemr-test-6eda3b670bc7.herokuapp.com"
           description={t("developpement-full-stack-du-saas-calvin-emr")}
         >
           <div className="flex flex-col gap-5 text-sm">
@@ -103,7 +103,7 @@ const CarouselCalvinEMR = () => {
         <CarouselItemPresentation
           logoUrl="/img/logos/calvinLogo.png"
           logoAlt="Calvin EMR Logo"
-          siteUrl="#"
+          siteUrl="https://calvinemr-test-6eda3b670bc7.herokuapp.com"
           description={t("architecture-et-technologies")}
         >
           <div className="flex flex-col gap-5 text-sm">
