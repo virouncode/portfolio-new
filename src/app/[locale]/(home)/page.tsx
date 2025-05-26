@@ -26,7 +26,7 @@ export async function generateMetadata({
     openGraph: {
       images: [
         {
-          url: "/img/opengrap-image.png",
+          url: "/img/opengraph-image.png",
           width: 1200,
           height: 630,
           alt: "Viroun Kattygnarath - Développeur Fullstack React Node Next.js",
