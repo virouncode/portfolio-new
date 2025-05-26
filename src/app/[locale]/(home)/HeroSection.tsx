@@ -21,7 +21,7 @@ const HeroSection = () => {
           <div className="relative mx-auto">
             <div className="w-[200px] h-[200px] md:w-[220px] md:h-[220px] rounded-full overflow-hidden border-4 border-white/80 shadow-xl shadow-black/20 relative z-10">
               <Image
-                src="/img/portrait_viroun_2.jpg"
+                src="/img/portrait_viroun_2.webp"
                 alt={t("viroun-kattygnarath-portrait")}
                 fill
                 priority={true}
