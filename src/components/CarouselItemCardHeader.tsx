@@ -30,6 +30,7 @@ const CarouselItemCardHeader = ({
               alt={logoAlt}
               fill
               className="object-contain object-center"
+              sizes={"120px"}
             />
           </div>
           <SquareArrowOutUpRight size={15} />

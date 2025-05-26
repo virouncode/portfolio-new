@@ -26,6 +26,7 @@ const HeroSection = () => {
                 fill
                 priority={true}
                 quality={100}
+                sizes="300px"
                 className="object-cover object-center"
               />
             </div>

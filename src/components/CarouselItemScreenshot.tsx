@@ -36,6 +36,9 @@ const CarouselItemScreenshot = ({
               alt={screenshotAlt}
               fill
               className="object-contain object-center"
+              sizes={
+                "(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
+              }
             />
           </div>
         </CardContent>

@@ -16,6 +16,7 @@ const LinkedInButton = () => {
         alt="linkedin logo"
         width={18}
         height={18}
+        sizes={"30px"}
       />
     </Link>
   );

@@ -38,6 +38,7 @@ const ProjectsSection = () => {
                 alt="fm4all Logo"
                 width={80}
                 height={60}
+                sizes={"100px"}
               />
             </div>
           </TabsTrigger>
@@ -52,6 +53,7 @@ const ProjectsSection = () => {
                 alt="Clavin EMR Logo"
                 width={80}
                 height={60}
+                sizes={"100px"}
               />
             </div>
           </TabsTrigger>
@@ -66,6 +68,7 @@ const ProjectsSection = () => {
                 alt="Toool App Logo"
                 width={80}
                 height={60}
+                sizes={"100px"}
               />
             </div>
           </TabsTrigger>
@@ -80,7 +83,7 @@ const ProjectsSection = () => {
                 alt="Studio Nouvel Logo"
                 width={50}
                 height={50}
-                className="text-(--blue)"
+                sizes={"100px"}
               />
             </div>
           </TabsTrigger>
