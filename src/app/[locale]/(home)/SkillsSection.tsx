@@ -106,7 +106,7 @@ const SkillsSection = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="h-[2px]  absolute bottom-0 bg-[var(--cream)] opacity-90 container mx-auto"></div>
+        <div className="h-[2px] absolute bottom-0 bg-[var(--cream)] opacity-90 container mx-auto"></div>
       </div>
     </section>
   );

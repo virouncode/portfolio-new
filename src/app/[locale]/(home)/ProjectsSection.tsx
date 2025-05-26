@@ -99,7 +99,7 @@ const ProjectsSection = () => {
         </TabsContent>
       </Tabs>
       <div className="flex justify-center">
-        <div className="h-[2px]  bg-[var(--cream)] opacity-90 container mx-auto"></div>
+        <div className="h-[2px] bg-[var(--cream)] opacity-90 container mx-auto"></div>
       </div>
     </section>
   );

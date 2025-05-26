@@ -11,7 +11,7 @@ const HeroSection = () => {
   const t = useTranslations("Hero");
   return (
     <section
-      className="min-h-[calc(100vh-3.5rem)] bg-gradient-to-br from-[var(--blue)] via-[color-mix(in_oklch,var(--blue),black_10%)] to-[color-mix(in_oklch,var(--blue),black_40%)] relative scroll-mt-14 flex items-center"
+      className="min-h-[calc(100vh-3.5rem)] bg-gradient-to-br from-[var(--blue)] via-[color-mix(in_oklch,var(--blue),black_10%)] to-[color-mix(in_oklch,var(--blue),black_40%)] relative scroll-mt-14 flex flex-col items-center justify-center"
       id="hero"
     >
       <div className="absolute inset-0 bg-white/10 backdrop-blur-[100px]"></div>
@@ -63,7 +63,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="h-[2px]  bg-[var(--cream)] opacity-90 container mx-auto absolute bottom-0"></div>
+        <div className="h-[2px] absolute bottom-0 bg-[var(--cream)] opacity-90 container mx-auto"></div>
       </div>
     </section>
   );
