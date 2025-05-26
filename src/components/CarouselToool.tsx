@@ -102,7 +102,7 @@ const CarouselToool = () => {
           logoAlt="Toool Logo"
           siteUrl="https://www.toool.fr/"
           description={t("presentation-de-lapp-toool")}
-          videoUrl="https://www.youtube.com/embed/MGB92QYb9Qc?rel=0"
+          videoUrl="https://www.youtube-nocookie.com/embed/MGB92QYb9Qc?rel=0"
           videoTitle={t("toool-presentation-de-lapplication")}
         />
         <CarouselItemVideo
@@ -110,7 +110,7 @@ const CarouselToool = () => {
           logoAlt="Toool Logo"
           siteUrl="https://www.toool.fr/"
           description={t("utilisation-de-lapp-toool")}
-          videoUrl="https://www.youtube.com/embed/yrcZXgQ9340?rel=0"
+          videoUrl="https://www.youtube-nocookie.com/embed/yrcZXgQ9340?rel=0"
           videoTitle={t("toool-utilisation-de-lapplication")}
         />
         <CarouselItemScreenshot

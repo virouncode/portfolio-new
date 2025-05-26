@@ -186,7 +186,7 @@ const CarouselFm4all = () => {
           logoAlt="fm4all Logo"
           siteUrl="https://www.fm4all.com"
           description={t("site-vitrine-fr-en")}
-          videoUrl="https://www.youtube.com/embed/JQTy50x4LSY?rel=0"
+          videoUrl="https://www.youtube-nocookie.com/embed/JQTy50x4LSY?rel=0"
           videoTitle={t("fm4all-site-vitrine")}
         />
         <CarouselItemVideo
@@ -194,7 +194,7 @@ const CarouselFm4all = () => {
           logoAlt="fm4all Logo"
           siteUrl="https://www.fm4all.com"
           description={t("comparateur-en-ligne")}
-          videoUrl="https://www.youtube.com/embed/ER8qbi4iX_k?rel=0"
+          videoUrl="https://www.youtube-nocookie.com/embed/ER8qbi4iX_k?rel=0"
           videoTitle={t("fm4all-comparateur-en-ligne")}
         />
         <CarouselItemVideo
@@ -202,7 +202,7 @@ const CarouselFm4all = () => {
           logoAlt="fm4all Logo"
           siteUrl="https://www.fm4all.com"
           description={t("devis-pdf")}
-          videoUrl="https://www.youtube.com/embed/-jKvdVpCBTA?rel=0"
+          videoUrl="https://www.youtube-nocookie.com/embed/-jKvdVpCBTA?rel=0"
           videoTitle={t("fm4all-devis-pdf")}
         />
         <CarouselItemVideo
@@ -210,7 +210,7 @@ const CarouselFm4all = () => {
           logoAlt="fm4all Logo"
           siteUrl="https://www.fm4all.com"
           description={t("back-office-fournisseur")}
-          videoUrl="https://www.youtube.com/embed/MOgfKvilM14?rel=0"
+          videoUrl="https://www.youtube-nocookie.com/embed/MOgfKvilM14?rel=0"
           videoTitle={t("fm4all-back-office-fournisseur")}
         />
       </CarouselContent>

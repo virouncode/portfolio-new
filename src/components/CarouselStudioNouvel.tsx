@@ -97,7 +97,7 @@ const CarouselStudioNouvel = () => {
         <CarouselItemVideo
           logoUrl="/img/logos/studioNouvelLogo.png"
           logoAlt="Studio Nouvel Logo"
-          videoUrl="https://www.youtube.com/embed/0sEmqMhTMhg?rel=0"
+          videoUrl="https://www.youtube-nocookie.com/embed/0sEmqMhTMhg?rel=0"
           siteUrl="https://www.studionouvel.com"
           description={t("presentation-du-site-vitrine")}
           videoTitle={t("studio-nouvel-site-vitrine")}

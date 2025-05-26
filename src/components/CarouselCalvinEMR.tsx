@@ -183,7 +183,7 @@ const CarouselCalvinEMR = () => {
           logoAlt="Calvin EMR Logo"
           siteUrl="https://calvinemr-test-6eda3b670bc7.herokuapp.com/"
           description={t("calendrier-partage-librairie-fullcalendar")}
-          videoUrl="https://www.youtube.com/embed/Y3tS8SNgGgI?rel=0"
+          videoUrl="https://www.youtube-nocookie.com/embed/Y3tS8SNgGgI?rel=0"
           videoTitle={t("calendrier-partage-de-calvin-emr")}
         />
         <CarouselItemVideo
@@ -191,7 +191,7 @@ const CarouselCalvinEMR = () => {
           logoAlt="Calvin EMR Logo"
           siteUrl="https://calvinemr-test-6eda3b670bc7.herokuapp.com/"
           description={t("dossier-medical-electronique")}
-          videoUrl="https://www.youtube.com/embed/TSplJr1gUBU?rel=0"
+          videoUrl="https://www.youtube-nocookie.com/embed/TSplJr1gUBU?rel=0"
           videoTitle={t("dossier-medical-electronique-de-calvin-emr")}
         />
         <CarouselItemVideo
@@ -199,7 +199,7 @@ const CarouselCalvinEMR = () => {
           logoAlt="Calvin EMR Logo"
           siteUrl="https://calvinemr-test-6eda3b670bc7.herokuapp.com/"
           description={t("messagerie-avec-websockets")}
-          videoUrl="https://www.youtube.com/embed/SAxNPqtOBfE?rel=0"
+          videoUrl="https://www.youtube-nocookie.com/embed/SAxNPqtOBfE?rel=0"
           videoTitle={t("messagerie-de-calvin-emr")}
         />
         <CarouselItemVideo
@@ -207,7 +207,7 @@ const CarouselCalvinEMR = () => {
           logoAlt="Calvin EMR Logo"
           siteUrl="https://calvinemr-test-6eda3b670bc7.herokuapp.com/"
           description={t("integration-de-chatgpt-open-ai-api")}
-          videoUrl="https://www.youtube.com/embed/6uW23sbIvlk?rel=0"
+          videoUrl="https://www.youtube-nocookie.com/embed/6uW23sbIvlk?rel=0"
           videoTitle={t("chat-gpt-de-calvin-emr")}
         />
         <CarouselItemVideo
@@ -215,7 +215,7 @@ const CarouselCalvinEMR = () => {
           logoAlt="Calvin EMR Logo"
           siteUrl="https://calvinemr-test-6eda3b670bc7.herokuapp.com/"
           description={t("facturation-et-export-csv")}
-          videoUrl="https://www.youtube.com/embed/fvzA9Rl-ics?rel=0"
+          videoUrl="https://www.youtube-nocookie.com/embed/fvzA9Rl-ics?rel=0"
           videoTitle={t("facturation-de-calvin-emr")}
         />
         <CarouselItemVideo
@@ -223,7 +223,7 @@ const CarouselCalvinEMR = () => {
           logoAlt="Calvin EMR Logo"
           siteUrl="https://calvinemr-test-6eda3b670bc7.herokuapp.com/"
           description={t("aide-a-la-redaction-dordonnances-0")}
-          videoUrl="https://www.youtube.com/embed/KjpsiuB84s8?rel=0"
+          videoUrl="https://www.youtube-nocookie.com/embed/KjpsiuB84s8?rel=0"
           videoTitle={t("aide-a-la-redaction-dordonnances-de-calvin-emr")}
         />
       </CarouselContent>
