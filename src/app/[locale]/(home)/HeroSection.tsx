@@ -3,10 +3,12 @@ import GithubButton from "@/components/buttons/github-button";
 import LinkedInButton from "@/components/buttons/linkedin-button";
 import MailContactButton from "@/components/buttons/mail-contact-button";
 import PhoneContactButton from "@/components/buttons/phone-contact-button";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { caveat } from "./ProjectsSection";
 
 const HeroSection = () => {
+  const t = useTranslations("Hero");
   return (
     <section
       className="min-h-[calc(100vh-3.5rem)] bg-gradient-to-br from-[var(--blue)] via-[color-mix(in_oklch,var(--blue),black_10%)] to-[color-mix(in_oklch,var(--blue),black_40%)] relative scroll-mt-14"
@@ -20,7 +22,7 @@ const HeroSection = () => {
             <div className="w-[200px] h-[200px] md:w-[220px] md:h-[220px] rounded-full overflow-hidden border-4 border-white/80 shadow-xl shadow-black/20 relative z-10">
               <Image
                 src="/img/portrait_viroun_2.jpg"
-                alt="Viroun Kattygnarath portrait"
+                alt={t("viroun-kattygnarath-portrait")}
                 fill
                 priority={true}
                 quality={100}
@@ -37,16 +39,16 @@ const HeroSection = () => {
             <h1
               className={`text-4xl md:text-5xl lg:text-6xl tracking-tight mb-4 font-bold ${caveat.className}`}
             >
-              Bonjour, je suis Viroun.
+              {t("bonjour-je-suis-viroun")}
             </h1>
             <h2 className="text-xl md:text-2xl lg:text-3xl mb-6  font-light">
-              Développeur fullstack React/Node/Next JS
+              {t("developpeur-fullstack-react-node-next-js")}
             </h2>
             <div className="h-1 w-20 bg-(--cream) rounded-full mx-auto mb-6"></div>
             <p className="text-base lg:text-lg max-w-[60ch] leading-relaxed mx-auto">
-              Je conçois et développe des applications web performantes,
-              robustes et évolutives pour des clients en France et à
-              l&apos;international.
+              {t(
+                "je-concois-et-developpe-des-applications-web-performantes-robustes-et-evolutives-pour-des-clients-en-france-et-a-l-international"
+              )}
             </p>
           </div>
           <div className="flex flex-col md:flex-row md:flex-wrap gap-4 items-center justify-center mt-4">

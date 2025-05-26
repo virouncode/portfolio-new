@@ -1,10 +1,11 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 const CVButton = () => {
   const locale = useLocale();
+  const t = useTranslations("Hero");
   const handleDownloadCV = () => {
     const link = document.createElement("a");
     link.href =
@@ -25,6 +26,7 @@ const CVButton = () => {
       variant="outline"
       className="bg-(--cream) min-w-[180px] px-6 py-5 rounded-full shadow-xl shadow-black/10  hover:bg-(--cream)/90 active:shadow-none active:scale-[98%] transition-all duration-300"
       onClick={handleDownloadCV}
+      title={t("telechargez-mon-cv")}
     >
       CV
     </Button>

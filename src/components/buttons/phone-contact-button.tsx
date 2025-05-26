@@ -2,22 +2,30 @@
 
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { toast } from "sonner";
 
 const PhoneContactButton = () => {
+  const t = useTranslations("Hero");
   const handleClickContact = async () => {
     try {
       await navigator.clipboard.writeText("+33683267962");
-      toast.success("Merci 😀 !", {
-        description:
-          "Mon numéro de téléphone a été copié dans votre presse-papiers. A bientôt !",
+      toast.success(t("merci"), {
+        description: t(
+          "mon-numero-de-telephone-a-ete-copie-dans-votre-presse-papiers-a-bientot"
+        ),
       });
     } catch (err) {
       if (err instanceof Error) {
-        alert(
-          `Impossible de copier le numéro de téléphone dans le presse-papiers ! ${err.message}`
-        );
+        toast.error(t("erreur"), {
+          description:
+            t(
+              "impossible-de-copier-le-numero-de-telephone-dans-le-presse-papiers"
+            ) +
+            " " +
+            err.message,
+        });
       }
     }
   };
@@ -26,12 +34,13 @@ const PhoneContactButton = () => {
       variant="outline"
       className="bg-(--cream) min-w-[180px] px-6 py-5 rounded-full shadow-xl shadow-black/10  hover:bg-(--cream)/90 active:shadow-none active:scale-[98%] transition-all duration-300"
       onClick={handleClickContact}
+      title={t("appelez-moi")}
     >
       <Link
         href="tel:+33683267962"
         className="flex items-center gap-2 justify-center cursor-default"
       >
-        <Phone /> Appelez-moi
+        <Phone /> {t("appelez-moi")}
       </Link>
     </Button>
   );

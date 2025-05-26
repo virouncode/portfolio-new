@@ -3,6 +3,7 @@ import CarouselFm4all from "@/components/CarouselFm4all";
 import CarouselStudioNouvel from "@/components/CarouselStudioNouvel";
 import CarouselToool from "@/components/CarouselToool";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useTranslations } from "next-intl";
 import { Caveat } from "next/font/google";
 import Image from "next/image";
 
@@ -13,6 +14,7 @@ export const caveat = Caveat({
 });
 
 const ProjectsSection = () => {
+  const t = useTranslations("Projets");
   return (
     <section
       className="min-h-[calc(100vh-3rem)] sm:min-h-[calc(100vh-3rem)] bg-gradient-to-br from-[var(--blue)] via-[color-mix(in_oklch,var(--blue),black_10%)] to-[color-mix(in_oklch,var(--blue),black_40%)] scroll-mt-11 flex flex-col gap-10 pt-10"
@@ -21,7 +23,7 @@ const ProjectsSection = () => {
       <h2
         className={`text-6xl tracking-tight font-bold text-center ${caveat.className}`}
       >
-        Projets
+        {t("projets")}
       </h2>
       <Tabs defaultValue="fm4all" className="container mx-auto px-6">
         <TabsList className="flex justify-center items-center py-6 mb-6 md:w-1/2 w-full mx-auto">
@@ -89,11 +91,9 @@ const ProjectsSection = () => {
         <TabsContent value="calvinEMR" className="h-[600px] sm:h-auto">
           <CarouselCalvinEMR />
         </TabsContent>
-
         <TabsContent value="tooolApp" className="h-[600px] sm:h-auto">
           <CarouselToool />
         </TabsContent>
-
         <TabsContent value="studioNouvel" className="h-[600px] sm:h-auto">
           <CarouselStudioNouvel />
         </TabsContent>

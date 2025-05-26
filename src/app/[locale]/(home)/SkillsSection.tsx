@@ -1,5 +1,6 @@
 import CustomStackIcon from "@/components/CustomStackIcon";
 import { BookOpen, Brain, Compass, Search, Smile } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { caveat } from "./ProjectsSection";
 
 const stackIcons = [
@@ -25,38 +26,41 @@ const stackIcons = [
   },
 ];
 
-const softSkills = [
-  {
-    icon: Brain,
-    title: "Esprit d’analyse",
-    description:
-      "Approche structurée des problèmes et recherche de solutions efficaces.",
-  },
-  {
-    icon: Search,
-    title: "Sens du détail",
-    description: "Attention portée à la précision et à la qualité du code.",
-  },
-  {
-    icon: Compass,
-    title: "Autonomie",
-    description:
-      "Capacité à avancer seul tout en collaborant quand nécessaire.",
-  },
-  {
-    icon: BookOpen,
-    title: "Envie d’apprendre",
-    description:
-      "Volonté de progresser continuellement à travers chaque projet.",
-  },
-  {
-    icon: Smile,
-    title: "Maîtrise de soi",
-    description: "Calme et efficacité même en situation de stress.",
-  },
-];
-
 const SkillsSection = () => {
+  const t = useTranslations("Skills");
+  const softSkills = [
+    {
+      icon: Brain,
+      title: t("esprit-danalyse"),
+      description: t(
+        "approche-structuree-des-problemes-et-recherche-de-solutions-efficaces"
+      ),
+    },
+    {
+      icon: Search,
+      title: t("sens-du-detail"),
+      description: t("attention-portee-a-la-precision-et-a-la-qualite-du-code"),
+    },
+    {
+      icon: Compass,
+      title: t("autonomie"),
+      description: t(
+        "capacite-a-avancer-seul-tout-en-collaborant-quand-necessaire"
+      ),
+    },
+    {
+      icon: BookOpen,
+      title: t("envie-dapprendre"),
+      description: t(
+        "volonte-de-progresser-continuellement-a-travers-chaque-projet"
+      ),
+    },
+    {
+      icon: Smile,
+      title: t("maitrise-de-soi"),
+      description: t("calme-et-efficacite-meme-en-situation-de-stress"),
+    },
+  ];
   return (
     <section
       className="min-h-[calc(100vh-3rem)] bg-gradient-to-br from-[var(--blue)] via-[color-mix(in_oklch,var(--blue),black_10%)] to-[color-mix(in_oklch,var(--blue),black_40%)] scroll-mt-11 pt-10 relative"
@@ -67,7 +71,7 @@ const SkillsSection = () => {
           <h2
             className={`text-6xl tracking-tight font-bold text-center ${caveat.className}`}
           >
-            Compétences
+            {t("competences")}
           </h2>
           <div className="flex items-center gap-4 justify-center p-8 flex-wrap relative">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full rounded-full bg-white/20 blur-3xl"></div>
@@ -80,7 +84,7 @@ const SkillsSection = () => {
           <h2
             className={`text-6xl tracking-tight font-bold text-center ${caveat.className}`}
           >
-            Soft skills
+            {t("soft-skills")}
           </h2>
           <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] p-8 gap-8">
             {softSkills.map(({ icon: Icon, title, description }) => (

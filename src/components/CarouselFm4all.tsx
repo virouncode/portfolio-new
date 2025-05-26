@@ -4,10 +4,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useTranslations } from "next-intl";
 import CarouselItemPresentation from "./CarouselItemPresentation";
 import CarouselItemVideo from "./CarouselItemVideo";
 
 const CarouselFm4all = () => {
+  const t = useTranslations("Projets.fm4all");
   return (
     <Carousel
       opts={{
@@ -20,71 +22,82 @@ const CarouselFm4all = () => {
           logoUrl="/img/logos/fm4allLogo.png"
           logoAlt="fm4all Logo"
           siteUrl="https://www.fm4all.com"
-          description="Développement full-stack de la plateforme fm4all"
+          description={t("developpement-full-stack-de-la-plateforme-fm4all")}
         >
           <div className="flex flex-col gap-5 text-sm">
             <div className="flex flex-col gap-3 bg-white/50 px-3 rounded-lg">
               <p className="leading-relaxed">
-                fm4all est une société spécialisée dans la{" "}
-                <strong>gestion externalisée des services aux PME/TPE</strong>.
+                {t("fm4all-est-une-societe-specialisee-dans-la")}{" "}
+                <strong>
+                  {t("gestion-externalisee-des-services-aux-pme-tpe")}
+                </strong>
+                .
               </p>
               <p className="leading-relaxed">
-                Sa plateforme regroupe des prestataires dans des domaines clés :
-                nettoyage, hygiène sanitaire, maintenance, sécurité incendie,
-                location de machines à café , fontaines à eau, etc.
+                {t(
+                  "sa-plateforme-regroupe-des-prestataires-dans-des-domaines-cles-nettoyage-hygiene-sanitaire-maintenance-securite-incendie-location-de-machines-a-cafe-fontaines-a-eau-etc"
+                )}
               </p>
               <p className="leading-relaxed italic">
                 {" "}
-                La promesse : 1 seul contact. 1 seul contrat. 1 seule facture.
+                {t("la-promesse-1-seul-contact-1-seul-contrat-1-seule-facture")}
               </p>
             </div>
             <div className="flex flex-col gap-3 border-l-4 border-[color:var(--blue)] pl-4">
               <p className="font-bold text-[color:var(--blue)]">
-                Objectifs & livrables
+                {t("objectifs-and-livrables")}
               </p>
               <ul className="ml-4 space-y-1.5">
                 <li className="list-disc list-outside">
-                  Conception et développement d’un <strong>site vitrine</strong>{" "}
-                  multilingue (FR/EN)
+                  {t("conception-et-developpement-dun")}{" "}
+                  <strong>{t("site-vitrine")}</strong> {t("multilingue-fr-en")}
                 </li>
                 <li className="list-disc list-outside">
-                  Intégration d’un <strong>référencement SEO</strong> adapté
-                  pour les deux langues
+                  {t("integration-dun")}{" "}
+                  <strong>{t("referencement-seo")}</strong>{" "}
+                  {t("adapte-pour-les-deux-langues")}
                 </li>
                 <li className="list-disc list-outside">
-                  Développement d’une{" "}
-                  <strong>application de comparaison de services</strong> avec
-                  génération de <strong>devis en ligne</strong>
+                  {t("developpement-dune")}{" "}
+                  <strong>{t("application-de-comparaison-de-services")}</strong>{" "}
+                  {t("avec-generation-de")}{" "}
+                  <strong>{t("devis-en-ligne")}</strong>
                 </li>
                 <li className="list-disc list-outside">
-                  Modélisation d’une{" "}
-                  <strong>base de données relationnelle</strong> : utilisateurs,
-                  fournisseurs, services, produits, tarifs, devis, etc.
+                  {t("modelisation-dune")}{" "}
+                  <strong>{t("base-de-donnees-relationnelle")}</strong>{" "}
+                  {t(
+                    "utilisateurs-fournisseurs-services-produits-tarifs-devis-etc"
+                  )}
                 </li>
                 <li className="list-disc list-outside">
-                  Mise en place de <strong>back-offices sécurisés</strong> pour
-                  clients et fournisseurs : authentification, gestion des
-                  contrats, mises à jour des tarifs en temps réel, etc.
+                  {t("mise-en-place-de")}{" "}
+                  <strong>{t("back-offices-securises")}</strong>{" "}
+                  {t(
+                    "pour-clients-et-fournisseurs-authentification-gestion-des-contrats-mises-a-jour-des-tarifs-en-temps-reel-etc"
+                  )}
                 </li>
               </ul>
             </div>
             <div className="flex flex-row gap-6 mt-2">
               <div className="flex-1 bg-white/70 p-3 rounded-lg">
                 <p className="font-bold text-[color:var(--blue)] mb-2">
-                  Stack front-end
+                  {t("stack-front-end")}
                 </p>
                 <p className="ml-2">
-                  React, Next.js 15, Tailwind, shadcn/ui, react-hook-form,
-                  next-intl, zod
+                  {t(
+                    "react-next-js-15-tailwind-shadcn-ui-react-hook-form-next-intl-zod"
+                  )}
                 </p>
               </div>
               <div className="flex-1 bg-white/70 p-3 rounded-lg">
                 <p className="font-bold text-[color:var(--blue)] mb-2">
-                  Stack back-end
+                  {t("stack-back-end")}
                 </p>
                 <p className="ml-2">
-                  Next.js 15 (API routes & Server Actions), Drizzle ORM,
-                  better-auth, zod
+                  {t(
+                    "next-js-15-api-routes-and-server-actions-drizzle-orm-better-auth-zod"
+                  )}
                 </p>
               </div>
             </div>
@@ -94,72 +107,75 @@ const CarouselFm4all = () => {
           logoUrl="/img/logos/fm4allLogo.png"
           logoAlt="fm4all Logo"
           siteUrl="https://www.fm4all.com"
-          description="Technologies et architecture"
+          description={t("technologies-et-architecture")}
         >
           <div className="flex flex-col gap-5 text-sm">
             <div className="flex flex-col gap-3 bg-white/50 p-3 rounded-lg">
               <p className="leading-relaxed">
-                La plateforme fm4all a été développée avec une architecture
-                moderne orientée performance et évolutivité.
+                {t(
+                  "la-plateforme-fm4all-a-ete-developpee-avec-une-architecture-moderne-orientee-performance-et-evolutivite"
+                )}
               </p>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/70 p-3 rounded-lg">
                 <p className="font-bold text-[color:var(--blue)] mb-2">
-                  Architecture
+                  {t("architecture")}
                 </p>
                 <ul className="ml-4 space-y-1.5">
                   <li className="list-disc list-outside">
-                    Application monolithique Next.js
+                    {t("application-monolithique-next-js")}
                   </li>
                   <li className="list-disc list-outside">
-                    API routes et Server Actions
+                    {t("api-routes-et-server-actions")}
                   </li>
                   <li className="list-disc list-outside">
-                    Base de données PostgreSQL
+                    {t("base-de-donnees-postgresql")}
                   </li>
                   <li className="list-disc list-outside">
-                    Authentification multi-niveaux
+                    {t("authentification-multi-niveaux")}
                   </li>
                 </ul>
               </div>
 
               <div className="bg-white/70 p-3 rounded-lg">
                 <p className="font-bold text-[color:var(--blue)] mb-2">
-                  Fonctionnalités clés
+                  {t("fonctionnalites-cles")}
                 </p>
                 <ul className="ml-4 space-y-1.5">
                   <li className="list-disc list-outside">
-                    Comparateur de services
+                    {t("comparateur-de-services")}
                   </li>
                   <li className="list-disc list-outside">
-                    Génération de devis PDF
+                    {t("generation-de-devis-pdf")}
                   </li>
                   <li className="list-disc list-outside">
-                    Back-offices personnalisés
+                    {t("back-offices-personnalises")}
                   </li>
                   <li className="list-disc list-outside">
-                    Notifications en temps réel (Websockets)
+                    {t("notifications-en-temps-reel-websockets")}
                   </li>
                 </ul>
               </div>
             </div>
 
             <div className="flex flex-col gap-3 border-l-4 border-[color:var(--blue)] pl-4">
-              <p className="font-bold text-[color:var(--blue)]">Déploiement</p>
+              <p className="font-bold text-[color:var(--blue)]">
+                {t("deploiement")}
+              </p>
               <ul className="ml-4 space-y-1.5">
                 <li className="list-disc list-outside">
-                  Hébergement sur Vercel (front-end et API)
+                  {t("hebergement-sur-vercel-front-end-et-api")}
                 </li>
                 <li className="list-disc list-outside">
-                  Base de données sur Neon.tech
+                  {t("base-de-donnees-sur-neon-tech")}
                 </li>
                 <li className="list-disc list-outside">
-                  CI/CD automatisé via GitHub Actions
+                  {t("ci-cd-automatise-via-github-actions")}
                 </li>
                 <li className="list-disc list-outside">
-                  Monitoring avec Google Analytics et Vercel Analytics
+                  {t("monitoring-avec-google-analytics-et-vercel-analytics")}
                 </li>
               </ul>
             </div>
@@ -169,33 +185,33 @@ const CarouselFm4all = () => {
           logoUrl="/img/logos/fm4allLogo.png"
           logoAlt="fm4all Logo"
           siteUrl="https://www.fm4all.com"
-          description="Site vitrine FR/EN"
+          description={t("site-vitrine-fr-en")}
           videoUrl="https://www.youtube.com/embed/JQTy50x4LSY?rel=0"
-          videoTitle="fm4all site vitrine"
+          videoTitle={t("fm4all-site-vitrine")}
         />
         <CarouselItemVideo
           logoUrl="/img/logos/fm4allLogo.png"
           logoAlt="fm4all Logo"
           siteUrl="https://www.fm4all.com"
-          description="Comparateur en ligne"
+          description={t("comparateur-en-ligne")}
           videoUrl="https://www.youtube.com/embed/ER8qbi4iX_k?rel=0"
-          videoTitle="fm4all comparateur en ligne"
+          videoTitle={t("fm4all-comparateur-en-ligne")}
         />
         <CarouselItemVideo
           logoUrl="/img/logos/fm4allLogo.png"
           logoAlt="fm4all Logo"
           siteUrl="https://www.fm4all.com"
-          description="Devis PDF"
+          description={t("devis-pdf")}
           videoUrl="https://www.youtube.com/embed/-jKvdVpCBTA?rel=0"
-          videoTitle="fm4all devis pdf"
+          videoTitle={t("fm4all-devis-pdf")}
         />
         <CarouselItemVideo
           logoUrl="/img/logos/fm4allLogo.png"
           logoAlt="fm4all Logo"
           siteUrl="https://www.fm4all.com"
-          description="Back-office fournisseur"
+          description={t("back-office-fournisseur")}
           videoUrl="https://www.youtube.com/embed/MOgfKvilM14?rel=0"
-          videoTitle="fm4all back office fournisseur"
+          videoTitle={t("fm4all-back-office-fournisseur")}
         />
       </CarouselContent>
       <CarouselPrevious className="left-1" />

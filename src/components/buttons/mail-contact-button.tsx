@@ -2,21 +2,29 @@
 
 import { Button } from "@/components/ui/button";
 import { Mail } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 
 const MailContactButton = () => {
+  const t = useTranslations("Hero");
   const handleClickContact = async () => {
     try {
       await navigator.clipboard.writeText("virounk@gmail.com");
-      toast.success("Merci 😀 !", {
-        description:
-          "Mon adresse e-mail a été copiée dans votre presse-papiers. A bientôt !",
+      toast.success(t("merci"), {
+        description: t(
+          "mon-adresse-e-mail-a-ete-copiee-dans-votre-presse-papiers-a-bientot"
+        ),
       });
     } catch (err) {
       if (err instanceof Error) {
-        alert(
-          `Impossible de copier l'adresse email virounk@gmail.com dans le presse-papiers ! ${err.message}`
-        );
+        toast.error(t("erreur"), {
+          description:
+            t(
+              "impossible-de-copier-l-adresse-email-virounk-gmail-com-dans-le-presse-papiers"
+            ) +
+            " " +
+            err.message,
+        });
       }
     }
   };
@@ -25,9 +33,10 @@ const MailContactButton = () => {
       variant="outline"
       className="bg-(--cream) min-w-[180px] px-6 py-5 rounded-full shadow-xl shadow-black/10  hover:bg-(--cream)/90 active:shadow-none active:scale-[98%] transition-all duration-300"
       onClick={handleClickContact}
+      title={t("ecrivez-moi")}
     >
       <Mail />
-      Ecrivez-moi
+      {t("ecrivez-moi")}
     </Button>
   );
 };

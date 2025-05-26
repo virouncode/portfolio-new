@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { Noto_Serif_Lao } from "next/font/google";
 import { useEffect, useState } from "react";
 import LocaleButton from "../buttons/locale-button";
@@ -11,6 +12,7 @@ export const notoSerif = Noto_Serif_Lao({
 });
 
 const Header = () => {
+  const t = useTranslations("Header");
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
   useEffect(() => {
@@ -61,7 +63,7 @@ const Header = () => {
         <a
           href="#hero"
           className={`text-4xl text-foreground font-bold ${notoSerif.className}`}
-          title="Home"
+          title={t("accueil")}
         >
           ວີຣຸນ
         </a>
@@ -73,36 +75,36 @@ const Header = () => {
               className={`transition-all duration-300 ${
                 isActive("#projets") ? "font-bold scale-110" : ""
               }`}
-              title="Projets"
+              title={t("projets")}
             >
-              Projets
+              {t("projets")}
             </a>
             <a
               href="#skills"
               className={`transition-all duration-300 ${
                 isActive("#skills") ? "font-bold scale-110" : ""
               }`}
-              title="Skills"
+              title={t("competences")}
             >
-              Compétences
+              {t("competences")}
             </a>
             <a
               href="#about"
               className={`transition-all duration-300 ${
                 isActive("#about") ? "font-bold scale-110" : ""
               }`}
-              title="About"
+              title={t("a-propos")}
             >
-              A propos
+              {t("a-propos")}
             </a>
             <a
               href="#hero"
               className={`transition-all duration-300 ${
                 isActive("#hero") ? "font-bold scale-110" : ""
               }`}
-              title="Contact"
+              title={t("contact")}
             >
-              Contact
+              {t("contact")}
             </a>
           </nav>
           <LocaleButton />
