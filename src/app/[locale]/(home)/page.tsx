@@ -23,7 +23,16 @@ export async function generateMetadata({
     description: t(
       "portfolio-de-viroun-kattygnarath-developpeur-fullstack-react-node-next-js-a-paris-france"
     ),
-    openGraph: {},
+    openGraph: {
+      images: [
+        {
+          url: "/img/opengrap-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Viroun Kattygnarath - Développeur Fullstack React Node Next.js",
+        },
+      ],
+    },
     alternates: {
       canonical:
         locale === "fr"
