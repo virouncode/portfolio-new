@@ -11,12 +11,10 @@ const CVButton = () => {
     const link = document.createElement("a");
     link.href =
       locale === "fr"
-        ? "/TV_KATTYGNARATH_CV_FR.pdf"
+        ? "/TV_KATTYGNARATH_CV.pdf"
         : "/TV_KATTYGNARATH_RESUME.pdf"; // URL relative ou absolue
     link.download =
-      locale === "fr"
-        ? "TV_KATTYGNARATH_CV_FR.pdf"
-        : "TV_KATTYGNARATH_RESUME.pdf"; // Nom du fichier téléchargé
+      locale === "fr" ? "TV_KATTYGNARATH_CV.pdf" : "TV_KATTYGNARATH_RESUME.pdf"; // Nom du fichier téléchargé
     document.body.appendChild(link);
     link.click();
     // Supprimez le lien après le téléchargement
