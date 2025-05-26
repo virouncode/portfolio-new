@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 
 const CVButton = () => {
@@ -28,6 +29,7 @@ const CVButton = () => {
       onClick={handleDownloadCV}
       title={t("telechargez-mon-cv")}
     >
+      <Download />
       CV
     </Button>
   );
