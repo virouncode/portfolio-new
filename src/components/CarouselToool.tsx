@@ -121,6 +121,7 @@ const CarouselToool = () => {
           screenshotUrl="/img/projets/toool/tooolMainstep.png"
           screenshotAlt={t("toool-page-principale-et-step-sequencer")}
         />
+
         <CarouselItemScreenshot
           logoUrl="/img/logos/tooolLogo.png"
           logoAlt="Toool Logo"
