@@ -1,6 +1,5 @@
-import { routing } from "@/i18n/routing";
-import { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { LocaleType, routing } from "@/i18n/routing";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import AboutSection from "./AboutSection";
 import HeroSection from "./HeroSection";
 import ProjectsSection from "./ProjectsSection";
@@ -12,19 +11,29 @@ export const generateStaticParams = async () => {
   }));
 };
 
-export const metadata = (): Metadata => ({
-  title: "Viroun Kattygnarath | Développeur React/Node/Next JS",
-  description:
-    "Portfolio de Viroun Kattygnarath, développeur fullstack React/Node/Next JS à Paris, France.",
-  openGraph: {},
-  alternates: {
-    canonical: "https://www.viroun.dev/fr",
-    languages: {
-      en: "https://www.viroun.dev/en",
-      fr: "https://www.viroun.dev/fr",
+export async function generateMetadata(
+  params: Promise<{ locale: LocaleType }>
+) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+  return {
+    title: t("viroun-kattygnarath-or-developpeur-react-node-next-js"),
+    description: t(
+      "portfolio-de-viroun-kattygnarath-developpeur-fullstack-react-node-next-js-a-paris-france"
+    ),
+    openGraph: {},
+    alternates: {
+      canonical:
+        locale === "fr"
+          ? "https://www.viroun.dev/fr"
+          : "https://www.viroun.dev/en",
+      languages: {
+        en: "https://www.viroun.dev/en",
+        fr: "https://www.viroun.dev/fr",
+      },
     },
-  },
-});
+  };
+}
 
 export default async function page({
   params,
