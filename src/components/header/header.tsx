@@ -1,15 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Noto_Serif_Lao } from "next/font/google";
 import { useEffect, useState } from "react";
 import LocaleButton from "../buttons/locale-button";
-export const notoSerif = Noto_Serif_Lao({
-  variable: "--font-noto-serif",
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
-});
 
 const Header = () => {
   const t = useTranslations("Header");
@@ -62,7 +55,7 @@ const Header = () => {
       <header className="container w-full mx-auto flex px-6 py-2 justify-between items-center">
         <a
           href="#hero"
-          className={`text-4xl text-foreground font-bold ${notoSerif.className}`}
+          className={`text-4xl text-foreground font-bold font-noto-serif`}
           title={t("accueil")}
         >
           ວີຣຸນ

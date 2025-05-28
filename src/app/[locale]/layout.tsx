@@ -3,7 +3,7 @@ import { LocaleType, routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { Manrope } from "next/font/google";
+import { Manrope, Noto_Serif_Lao } from "next/font/google";
 import { notFound } from "next/navigation";
 import { Toaster } from "sonner";
 import "../globals.css";
@@ -11,6 +11,13 @@ import "../globals.css";
 const manrope = Manrope({
   subsets: ["latin"],
   display: "swap",
+});
+
+const notoSerif = Noto_Serif_Lao({
+  variable: "--font-noto-serif",
+  subsets: ["lao"],
+  display: "swap",
+  weight: ["700"],
 });
 
 export const metadata: Metadata = {
@@ -40,7 +47,9 @@ export default async function RootLayout({
   setRequestLocale(locale);
   return (
     <html lang={locale}>
-      <body className={`${manrope.className}  antialiased overflow-x-hidden`}>
+      <body
+        className={`${manrope.className} ${notoSerif.variable}  antialiased overflow-x-hidden`}
+      >
         <NextIntlClientProvider>
           <Header />
           {children}
