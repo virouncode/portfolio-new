@@ -4,12 +4,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import CarouselItemPresentation from "./CarouselItemPresentation";
 import CarouselItemVideo from "./CarouselItemVideo";
 
 const CarouselFm4all = () => {
   const t = useTranslations("Projets.fm4all");
+  const locale = useLocale();
   return (
     <Carousel
       opts={{
@@ -21,7 +22,11 @@ const CarouselFm4all = () => {
         <CarouselItemPresentation
           logoUrl="/img/logos/fm4allLogo.png"
           logoAlt="fm4all Logo"
-          siteUrl="https://www.fm4all.com"
+          siteUrl={
+            locale === "fr"
+              ? "https://www.fm4all.com/fr"
+              : "https://www.fm4all.com/en"
+          }
           description={t("developpement-full-stack-de-la-plateforme-fm4all")}
         >
           <div className="flex flex-col gap-5 text-sm">
@@ -106,7 +111,11 @@ const CarouselFm4all = () => {
         <CarouselItemPresentation
           logoUrl="/img/logos/fm4allLogo.png"
           logoAlt="fm4all Logo"
-          siteUrl="https://www.fm4all.com"
+          siteUrl={
+            locale === "fr"
+              ? "https://www.fm4all.com/fr"
+              : "https://www.fm4all.com/en"
+          }
           description={t("technologies-et-architecture")}
         >
           <div className="flex flex-col gap-5 text-sm">
@@ -184,7 +193,11 @@ const CarouselFm4all = () => {
         <CarouselItemVideo
           logoUrl="/img/logos/fm4allLogo.png"
           logoAlt="fm4all Logo"
-          siteUrl="https://www.fm4all.com"
+          siteUrl={
+            locale === "fr"
+              ? "https://www.fm4all.com/fr"
+              : "https://www.fm4all.com/en"
+          }
           description={t("site-vitrine-fr-en")}
           videoUrl="https://www.youtube-nocookie.com/embed/JQTy50x4LSY?rel=0"
           videoTitle={t("fm4all-site-vitrine")}
@@ -192,7 +205,11 @@ const CarouselFm4all = () => {
         <CarouselItemVideo
           logoUrl="/img/logos/fm4allLogo.png"
           logoAlt="fm4all Logo"
-          siteUrl="https://www.fm4all.com"
+          siteUrl={
+            locale === "fr"
+              ? "https://www.fm4all.com/fr"
+              : "https://www.fm4all.com/en"
+          }
           description={t("comparateur-en-ligne")}
           videoUrl="https://www.youtube-nocookie.com/embed/ER8qbi4iX_k?rel=0"
           videoTitle={t("fm4all-comparateur-en-ligne")}
@@ -200,7 +217,11 @@ const CarouselFm4all = () => {
         <CarouselItemVideo
           logoUrl="/img/logos/fm4allLogo.png"
           logoAlt="fm4all Logo"
-          siteUrl="https://www.fm4all.com"
+          siteUrl={
+            locale === "fr"
+              ? "https://www.fm4all.com/fr"
+              : "https://www.fm4all.com/en"
+          }
           description={t("devis-pdf")}
           videoUrl="https://www.youtube-nocookie.com/embed/-jKvdVpCBTA?rel=0"
           videoTitle={t("fm4all-devis-pdf")}
@@ -208,7 +229,11 @@ const CarouselFm4all = () => {
         <CarouselItemVideo
           logoUrl="/img/logos/fm4allLogo.png"
           logoAlt="fm4all Logo"
-          siteUrl="https://www.fm4all.com"
+          siteUrl={
+            locale === "fr"
+              ? "https://www.fm4all.com/fr"
+              : "https://www.fm4all.com/en"
+          }
           description={t("back-office-fournisseur")}
           videoUrl="https://www.youtube-nocookie.com/embed/MOgfKvilM14?rel=0"
           videoTitle={t("fm4all-back-office-fournisseur")}
