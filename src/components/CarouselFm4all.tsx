@@ -126,7 +126,6 @@ const CarouselFm4all = () => {
                 )}
               </p>
             </div>
-
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/70 p-3 rounded-lg">
                 <p className="font-bold text-[color:var(--blue)] mb-2">
@@ -168,25 +167,40 @@ const CarouselFm4all = () => {
                 </ul>
               </div>
             </div>
-
-            <div className="flex flex-col gap-3 border-l-4 border-[color:var(--blue)] pl-4">
-              <p className="font-bold text-[color:var(--blue)]">
-                {t("deploiement")}
-              </p>
-              <ul className="ml-4 space-y-1.5">
-                <li className="list-disc list-outside">
-                  {t("hebergement-sur-vercel-front-end-et-api")}
-                </li>
-                <li className="list-disc list-outside">
-                  {t("base-de-donnees-sur-neon-tech")}
-                </li>
-                <li className="list-disc list-outside">
-                  {t("ci-cd-automatise-via-github-actions")}
-                </li>
-                <li className="list-disc list-outside">
-                  {t("monitoring-avec-google-analytics-et-vercel-analytics")}
-                </li>
-              </ul>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="flex flex-col gap-3 border-l-4 border-[color:var(--blue)] pl-4">
+                <p className="font-bold text-[color:var(--blue)]">
+                  {t("deploiement")}
+                </p>
+                <ul className="ml-4 space-y-1.5">
+                  <li className="list-disc list-outside">
+                    {t("hebergement-sur-vercel-front-end-et-api")}
+                  </li>
+                  <li className="list-disc list-outside">
+                    {t("base-de-donnees-sur-neon-tech")}
+                  </li>
+                  <li className="list-disc list-outside">
+                    {t("ci-cd-automatise-via-github-actions")}
+                  </li>
+                  <li className="list-disc list-outside">
+                    {t("monitoring-avec-google-analytics-et-vercel-analytics")}
+                  </li>
+                </ul>
+              </div>
+              <div className="flex flex-col gap-3 border-l-4 border-[color:var(--blue)] pl-4">
+                <p className="font-bold text-[color:var(--blue)]">Tests</p>
+                <ul className="ml-4 space-y-1.5">
+                  <li className="list-disc list-outside">
+                    {t("test-unitaires-vitest")}
+                  </li>
+                  <li className="list-disc list-outside">
+                    {t("tests-dintegration-vitest")}
+                  </li>
+                  <li className="list-disc list-outside">
+                    {t("tests-end2end-cypress")}
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </CarouselItemPresentation>

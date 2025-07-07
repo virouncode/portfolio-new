@@ -76,7 +76,10 @@
       "devis-pdf": "Devis PDF",
       "fm4all-devis-pdf": "fm4all devis pdf",
       "back-office-fournisseur": "Back-office fournisseur",
-      "fm4all-back-office-fournisseur": "fm4all back office fournisseur"
+      "fm4all-back-office-fournisseur": "fm4all back office fournisseur",
+      "test-unitaires-vitest": "Test unitaires : vitest",
+      "tests-dintegration-vitest": "Tests d'intégration : vitest",
+      "tests-end2end-cypress": "Tests end2end : cypress"
     },
     "calvinEMR": {
       "developpement-full-stack-du-saas-calvin-emr": "Développement full-stack du SaaS Calvin EMR",
