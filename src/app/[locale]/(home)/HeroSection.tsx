@@ -1,5 +1,4 @@
 import CVButton from "@/components/buttons/cv-button";
-import GithubButton from "@/components/buttons/github-button";
 import LinkedInButton from "@/components/buttons/linkedin-button";
 import MailContactButton from "@/components/buttons/mail-contact-button";
 import PhoneContactButton from "@/components/buttons/phone-contact-button";
@@ -58,7 +57,7 @@ const HeroSection = () => {
             <CVButton />
             <div className="flex gap-4 items-center">
               <LinkedInButton />
-              <GithubButton />
+              {/* <GithubButton /> */}
             </div>
           </div>
         </div>
