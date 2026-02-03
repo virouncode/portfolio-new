@@ -67,7 +67,7 @@
       "hebergement-sur-vercel-front-end-et-api": "Hosted on Vercel (front-end and API)",
       "deploiement": "Deployment",
       "base-de-donnees-sur-neon-tech": "Database hosted on Neon.tech",
-      // "ci-cd-automatise-via-github-actions": "Automated CI/CD via GitHub Actions",
+      "ci-cd-automatise-via-github-actions": "Automated CI/CD via GitHub Actions",
       "monitoring-avec-google-analytics-et-vercel-analytics": "Monitoring with Google Analytics and Vercel Analytics",
       "site-vitrine-fr-en": "Showcase website FR/EN",
       "fm4all-site-vitrine": "fm4all showcase website",
