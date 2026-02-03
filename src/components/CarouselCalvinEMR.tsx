@@ -34,11 +34,11 @@ const CarouselCalvinEMR = () => {
               </p>
               <p className="leading-relaxed">
                 {t(
-                  "conception-et-developpement-full-stack-d-un-logiciel-de-gestion-medicale-destine-aux-professionnels-de-sante-realise-en"
+                  "conception-et-developpement-full-stack-d-un-logiciel-de-gestion-medicale-destine-aux-professionnels-de-sante-realise-en",
                 )}{" "}
                 <strong>{t("collaboration-directe-avec-un-medecin")}</strong>
                 {t(
-                  "ce-saas-permet-une-gestion-centralisee-des-dossiers-patients-de-la-prise-de-rendez-vous-de-la-messagerie-interne-de-l-envoi-d-e-fax-ainsi-que-de-l-edition-assistee-des-ordonnances-et-des-factures"
+                  "ce-saas-permet-une-gestion-centralisee-des-dossiers-patients-de-la-prise-de-rendez-vous-de-la-messagerie-interne-de-l-envoi-d-e-fax-ainsi-que-de-l-edition-assistee-des-ordonnances-et-des-factures",
                 )}
               </p>
               <p className="leading-relaxed italic">
@@ -111,7 +111,7 @@ const CarouselCalvinEMR = () => {
             <div className="flex flex-col gap-3 bg-white/50 p-3 rounded-lg">
               <p className="leading-relaxed">
                 {t(
-                  "la-plateforme-calvin-emr-a-ete-developpee-avec-une-architecture-moderne-orientee-performance-et-evolutivite-pour-repondre-aux-besoins-specifiques-des-cliniques-medicales"
+                  "la-plateforme-calvin-emr-a-ete-developpee-avec-une-architecture-moderne-orientee-performance-et-evolutivite-pour-repondre-aux-besoins-specifiques-des-cliniques-medicales",
                 )}
               </p>
             </div>
@@ -172,9 +172,9 @@ const CarouselCalvinEMR = () => {
                 <li className="list-disc list-outside">
                   {t("application-web-multi-tenant-personnalisable")}
                 </li>
-                <li className="list-disc list-outside">
+                {/* <li className="list-disc list-outside">
                   {t("deploiement-automatise-via-git")}
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

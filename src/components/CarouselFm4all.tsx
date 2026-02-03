@@ -40,7 +40,7 @@ const CarouselFm4all = () => {
               </p>
               <p className="leading-relaxed">
                 {t(
-                  "sa-plateforme-regroupe-des-prestataires-dans-des-domaines-cles-nettoyage-hygiene-sanitaire-maintenance-securite-incendie-location-de-machines-a-cafe-fontaines-a-eau-etc"
+                  "sa-plateforme-regroupe-des-prestataires-dans-des-domaines-cles-nettoyage-hygiene-sanitaire-maintenance-securite-incendie-location-de-machines-a-cafe-fontaines-a-eau-etc",
                 )}
               </p>
               <p className="leading-relaxed italic">
@@ -72,14 +72,14 @@ const CarouselFm4all = () => {
                   {t("modelisation-dune")}{" "}
                   <strong>{t("base-de-donnees-relationnelle")}</strong>{" "}
                   {t(
-                    "utilisateurs-fournisseurs-services-produits-tarifs-devis-etc"
+                    "utilisateurs-fournisseurs-services-produits-tarifs-devis-etc",
                   )}
                 </li>
                 <li className="list-disc list-outside">
                   {t("mise-en-place-de")}{" "}
                   <strong>{t("back-offices-securises")}</strong>{" "}
                   {t(
-                    "pour-clients-et-fournisseurs-authentification-gestion-des-contrats-mises-a-jour-des-tarifs-en-temps-reel-etc"
+                    "pour-clients-et-fournisseurs-authentification-gestion-des-contrats-mises-a-jour-des-tarifs-en-temps-reel-etc",
                   )}
                 </li>
               </ul>
@@ -91,7 +91,7 @@ const CarouselFm4all = () => {
                 </p>
                 <p className="ml-2">
                   {t(
-                    "react-next-js-15-tailwind-shadcn-ui-react-hook-form-next-intl-zod"
+                    "react-next-js-15-tailwind-shadcn-ui-react-hook-form-next-intl-zod",
                   )}
                 </p>
               </div>
@@ -101,7 +101,7 @@ const CarouselFm4all = () => {
                 </p>
                 <p className="ml-2">
                   {t(
-                    "next-js-15-api-routes-and-server-actions-drizzle-orm-better-auth-zod"
+                    "next-js-15-api-routes-and-server-actions-drizzle-orm-better-auth-zod",
                   )}
                 </p>
               </div>
@@ -122,7 +122,7 @@ const CarouselFm4all = () => {
             <div className="flex flex-col gap-3 bg-white/50 p-3 rounded-lg">
               <p className="leading-relaxed">
                 {t(
-                  "la-plateforme-fm4all-a-ete-developpee-avec-une-architecture-moderne-orientee-performance-et-evolutivite"
+                  "la-plateforme-fm4all-a-ete-developpee-avec-une-architecture-moderne-orientee-performance-et-evolutivite",
                 )}
               </p>
             </div>
@@ -179,9 +179,9 @@ const CarouselFm4all = () => {
                   <li className="list-disc list-outside">
                     {t("base-de-donnees-sur-neon-tech")}
                   </li>
-                  <li className="list-disc list-outside">
+                  {/* <li className="list-disc list-outside">
                     {t("ci-cd-automatise-via-github-actions")}
-                  </li>
+                  </li> */}
                   <li className="list-disc list-outside">
                     {t("monitoring-avec-google-analytics-et-vercel-analytics")}
                   </li>
